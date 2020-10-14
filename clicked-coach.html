@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicked Coach</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <!-- Begin Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <!-- End Fonts -->
+  <!-- Begin Style  sheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/fonts/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <!-- End Stylesheets -->
+</head>
+
+<body>
+  <!-- Begin Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <div class="d-flex">
+          <a href="/" class="btn-logo"><img src="assets/images/logo.png" alt="Click"></a>
+
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="#our_benefits" class="nav-link">Our story</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://oscar-update-click.netlify.app/learn-experiences" class="nav-link">Learning Experiences</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="actions-btns d-flex">
+          <a href="#" class="btn btn-normal">Beta Login</a>
+          <div class="social-icons">
+            <a href="https://youtube" class="social-icon">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.3848 2.7832C17.2851 2.41218 17.0898 2.07384 16.8184 1.80202C16.5469 1.53021 16.2088 1.33446 15.8379 1.23438C14.4727 0.867188 9 0.867188 9 0.867188C9 0.867188 3.52734 0.867187 2.16211 1.23242C1.79106 1.33219 1.45278 1.52782 1.18126 1.79969C0.90974 2.07155 0.71453 2.41007 0.615234 2.78125C0.25 4.14844 0.25 7 0.25 7C0.25 7 0.25 9.85156 0.615234 11.2168C0.816406 11.9707 1.41016 12.5645 2.16211 12.7656C3.52734 13.1328 9 13.1328 9 13.1328C9 13.1328 14.4727 13.1328 15.8379 12.7656C16.5918 12.5645 17.1836 11.9707 17.3848 11.2168C17.75 9.85156 17.75 7 17.75 7C17.75 7 17.75 4.14844 17.3848 2.7832ZM7.26172 9.61719V4.38281L11.793 6.98047L7.26172 9.61719Z"
+                  fill="#7C788A" />
+              </svg>
+            </a>
+            <a href="https://linkedin" class="social-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.1875 0.1875H0.8125C0.466797 0.1875 0.1875 0.466797 0.1875 0.8125V15.1875C0.1875 15.5332 0.466797 15.8125 0.8125 15.8125H15.1875C15.5332 15.8125 15.8125 15.5332 15.8125 15.1875V0.8125C15.8125 0.466797 15.5332 0.1875 15.1875 0.1875ZM4.82227 13.502H2.50391V6.04492H4.82227V13.502ZM3.66406 5.02539C3.39829 5.02539 3.13849 4.94658 2.91751 4.79893C2.69654 4.65127 2.5243 4.44141 2.4226 4.19587C2.32089 3.95033 2.29428 3.68015 2.34613 3.41949C2.39798 3.15883 2.52596 2.91939 2.71389 2.73147C2.90181 2.54354 3.14125 2.41556 3.40191 2.36371C3.66257 2.31186 3.93275 2.33847 4.17829 2.44018C4.42383 2.54188 4.6337 2.71411 4.78135 2.93509C4.929 3.15607 5.00781 3.41587 5.00781 3.68164C5.00586 4.42383 4.4043 5.02539 3.66406 5.02539ZM13.502 13.502H11.1855V9.875C11.1855 9.00977 11.1699 7.89844 9.98047 7.89844C8.77539 7.89844 8.58984 8.83984 8.58984 9.8125V13.502H6.27539V6.04492H8.49805V7.06445H8.5293C8.83789 6.47852 9.59375 5.85938 10.7227 5.85938C13.0703 5.85938 13.502 7.4043 13.502 9.41211V13.502Z"
+                  fill="#7C788A" />
+              </svg>
+            </a>
+            <a href="https://facebook" class="social-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.1875 0.1875H0.8125C0.466797 0.1875 0.1875 0.466797 0.1875 0.8125V15.1875C0.1875 15.5332 0.466797 15.8125 0.8125 15.8125H15.1875C15.5332 15.8125 15.8125 15.5332 15.8125 15.1875V0.8125C15.8125 0.466797 15.5332 0.1875 15.1875 0.1875ZM13.3828 4.74805H12.1348C11.1562 4.74805 10.9668 5.21289 10.9668 5.89648V7.40234H13.3027L12.998 9.75977H10.9668V15.8125H8.53125V9.76172H6.49414V7.40234H8.53125V5.66406C8.53125 3.64648 9.76367 2.54688 11.5645 2.54688C12.4277 2.54688 13.168 2.61133 13.3848 2.64062V4.74805H13.3828Z"
+                  fill="#7C788A" />
+              </svg>
+            </a>
+            <a href="https://instagram" class="social-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.00009 5.39609C6.5665 5.39609 5.39658 6.56601 5.39658 7.9996C5.39658 9.4332 6.5665 10.6031 8.00009 10.6031C9.43369 10.6031 10.6036 9.4332 10.6036 7.9996C10.6036 6.56601 9.43369 5.39609 8.00009 5.39609ZM15.8087 7.9996C15.8087 6.92148 15.8185 5.85312 15.7579 4.77695C15.6974 3.52695 15.4122 2.41757 14.4981 1.50351C13.5821 0.587495 12.4747 0.304292 11.2247 0.243745C10.1466 0.183198 9.07822 0.192964 8.00205 0.192964C6.92392 0.192964 5.85556 0.183198 4.77939 0.243745C3.52939 0.304292 2.42001 0.589448 1.50595 1.50351C0.589936 2.41953 0.306733 3.52695 0.246186 4.77695C0.18564 5.85507 0.195405 6.92343 0.195405 7.9996C0.195405 9.07578 0.18564 10.1461 0.246186 11.2223C0.306733 12.4723 0.59189 13.5816 1.50595 14.4957C2.42197 15.4117 3.52939 15.6949 4.77939 15.7555C5.85752 15.816 6.92587 15.8062 8.00205 15.8062C9.08017 15.8062 10.1485 15.816 11.2247 15.7555C12.4747 15.6949 13.5841 15.4098 14.4981 14.4957C15.4142 13.5797 15.6974 12.4723 15.7579 11.2223C15.8204 10.1461 15.8087 9.07773 15.8087 7.9996ZM8.00009 12.0055C5.7833 12.0055 3.99423 10.2164 3.99423 7.9996C3.99423 5.78281 5.7833 3.99374 8.00009 3.99374C10.2169 3.99374 12.006 5.78281 12.006 7.9996C12.006 10.2164 10.2169 12.0055 8.00009 12.0055ZM12.17 4.76523C11.6524 4.76523 11.2345 4.34726 11.2345 3.82968C11.2345 3.3121 11.6524 2.89414 12.17 2.89414C12.6876 2.89414 13.1056 3.3121 13.1056 3.82968C13.1057 3.95258 13.0816 4.07431 13.0347 4.18788C12.9877 4.30146 12.9188 4.40465 12.8319 4.49156C12.745 4.57846 12.6418 4.64737 12.5282 4.69433C12.4146 4.74129 12.2929 4.76538 12.17 4.76523Z"
+                  fill="#7C788A" />
+              </svg>
+            </a>
+            <a href="https://twitter" class="social-icon">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.125 1.9668C16.5273 2.22462 15.877 2.41016 15.207 2.48243C15.9026 2.06922 16.4234 1.41641 16.6719 0.646492C16.0192 1.03475 15.3042 1.30701 14.5586 1.45118C14.247 1.11803 13.8701 0.852625 13.4514 0.671507C13.0327 0.490389 12.5812 0.397438 12.125 0.398446C10.2793 0.398446 8.79492 1.89454 8.79492 3.73048C8.79492 3.98829 8.82617 4.2461 8.87695 4.49415C6.11328 4.34962 3.64844 3.0293 2.00977 1.00782C1.71118 1.51781 1.55471 2.0985 1.55664 2.68946C1.55664 3.84571 2.14453 4.86524 3.04102 5.46485C2.5127 5.44405 1.99676 5.29883 1.53516 5.04102V5.08204C1.53516 6.70118 2.67969 8.04298 4.20508 8.35157C3.91867 8.42597 3.62404 8.46403 3.32812 8.46485C3.11133 8.46485 2.90625 8.44337 2.69922 8.41407C3.12109 9.73438 4.34961 10.6934 5.8125 10.7246C4.66797 11.6211 3.23438 12.1484 1.67773 12.1484C1.39844 12.1484 1.14062 12.1387 0.873047 12.1074C2.34961 13.0547 4.10156 13.6016 5.98828 13.6016C12.1133 13.6016 15.4648 8.52735 15.4648 4.12306C15.4648 3.97852 15.4648 3.83399 15.4551 3.68946C16.1035 3.21485 16.6719 2.62696 17.125 1.9668Z"
+                  fill="#7C788A" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Begin Home Content -->
+  <main class="main coach">
+    <section class="passion container">
+      <div class="content">
+        <h1 class="title">Share Your Passion</h1>
+        <p class="desc">Mentor bright and eager minds and help shape the future of your industry. </p>
+        <p class="desc">If you believe that everyone should have access to real-world, hands-on learning experiences and
+          career-building mentorship, join our team of Clicked coaches. </p>
+        <button class="btn btn-orange">Apply as a Clicked Coach</button>
+      </div>
+      <div class="card">
+        <img src="assets/images/adver1-child1.png" alt="" class="avatar">
+        <p class="job">CAREER MANAGEMENT</p>
+        <p class="name">Ed Delgado</p>
+        <p class="position">Director of Sourcing</p>
+        <img src="assets/images/adver1-child2.png" alt="" class="mark">
+      </div>
+    </section>
+
+    <section class="desc">
+      <div class="container">
+        <div class="part1 d-flex">
+          <img src="assets/images/adver2.png" alt="" class="img1">
+          <img src="assets/images/adver2-bk.png" alt="" class="img-bk">
+          <div class="right">
+            <img src="assets/images/coach-tick.png" alt="">
+            <h2 class="title">Help Young Professionals Get the Experience they Need to Grow their Skills and Build their
+              Careers</h2>
+            <p class="desc">Coaches help our community members via learning experiences and offer advice on career
+              fields our members are interested in learning more about.
+
+              Our coaches also also aid us in our journey by providing critical feedback on our product and offering.
+            </p>
+          </div>
+        </div>
+        <div class="part2 d-flex">
+          <div class="left">
+            <h2 class="title">How Can You Help?</h2>
+            <h3 class="sub-title">Learning Partners</h3>
+            <p>Answer questions and help support final deliverables on team projects.</p>
+            <h3>Offer Career Advice</h3>
+            <p>Offer advice on how to break into the industry and support the next generation of professionals.</p>
+            <h3>Give Feedback</h3>
+            <p>Give feedback on how coaching and learning experiences are working in our platform.</p>
+          </div>
+          <img src="assets/images/adver2-bk.png" alt="" class="img-bk">
+          <img src="assets/images/adver3.png" alt="" class="img2">
+        </div>
+      </div>
+    </section>
+
+    <section class="current container">
+      <div class="row">
+        <h2 class="title">Our Current Coaches</h2>
+      </div>
+      <div class="row">
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar1.png" alt="">
+            <div>
+              <p class="job">CAREER MANAGEMENT</p>
+              <h4 class="name">James Zhao</h4>
+              <p class="position">Product, Facebook</p>
+            </div>
+          </div>
+        </div>
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar2.png" alt="">
+            <div>
+              <p class="job">MARKETING</p>
+              <h4 class="name">Jayne Peressini</h4>
+              <p class="position">Sr. Director of Mobile and Growth, EA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar3.png" alt="">
+            <div>
+              <p class="job">CAREER MANAGEMENT</p>
+              <h4 class="name">Ed Delgado</h4>
+              <p class="position">Director of Sourcing, Salesforce</p>
+            </div>
+          </div>
+        </div>
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar4.png" alt="">
+            <div>
+              <p class="job">MARKETING</p>
+              <h4 class="name">Anna Ziskin</h4>
+              <p class="position">Comms Planning, Facebook</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar5.png" alt="">
+            <div>
+              <p class="job">PROGRAM MANAGEMENT</p>
+              <h4 class="name">Sergio Patterson</h4>
+              <p class="position">Program Manager, Facebook</p>
+            </div>
+          </div>
+        </div>
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar6.png" alt="">
+            <div>
+              <p class="job">PRODUCT</p>
+              <h4 class="name">Josh Redel</h4>
+              <p class="position">Product Manager, Uber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar7.png" alt="">
+            <div>
+              <p class="job">UI/UX & VISUAL DESIGN</p>
+              <h4 class="name">Robbin Arcega</h4>
+              <p class="position">Design Instructor, Designlab</p>
+            </div>
+          </div>
+        </div>
+        <div class="current-coach col-xs-6 col-md-6">
+          <div class="item d-flex">
+            <img src="assets/images/coach-avatar8.png" alt="">
+            <div>
+              <p class="job">STRATEGY & OPERATIONS</p>
+              <h4 class="name">Julie Ovadia</h4>
+              <p class="position">Senior Consultant, Deloitte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apply">
+      <img src="assets/images/coach-mark-bk.png" alt="">
+      <div class="content container">
+        <div class="d-flex">
+          <div class="">
+            <h2>Support Professional Career Growth</h2>
+            <p>Nothing is more important to career growth than getting the right guidance. Become a coach and provide that
+              critical guidance, while helping Clicked build the future of career exploration.</p>
+          </div>
+          <button class="btn btn-orange">
+            <span>Apply Now</span>
+            <svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.6376 0.208858C15.7039 0.142343 15.7827 0.0895708 15.8695 0.0535639C15.9563 0.0175571 16.0493 -0.000976562 16.1432 -0.000976562C16.2372 -0.000976562 16.3302 0.0175571 16.417 0.0535639C16.5038 0.0895708 16.5826 0.142343 16.6489 0.208858L20.9344 4.49429C21.0009 4.56064 21.0537 4.63946 21.0897 4.72623C21.1257 4.813 21.1442 4.90603 21.1442 4.99997C21.1442 5.09392 21.1257 5.18694 21.0897 5.27372C21.0537 5.36049 21.0009 5.43931 20.9344 5.50565L16.6489 9.79109C16.5148 9.9252 16.3329 10.0005 16.1432 10.0005C15.9536 10.0005 15.7717 9.9252 15.6376 9.79109C15.5035 9.65697 15.4281 9.47507 15.4281 9.28541C15.4281 9.09574 15.5035 8.91384 15.6376 8.77973L19.4188 4.99997L15.6376 1.22022C15.5711 1.15387 15.5183 1.07506 15.4823 0.988284C15.4463 0.90151 15.4277 0.808486 15.4277 0.714539C15.4277 0.620592 15.4463 0.527568 15.4823 0.440794C15.5183 0.354021 15.5711 0.275204 15.6376 0.208858Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 4.99842C0 4.80899 0.0916148 4.62732 0.25469 4.49338C0.417765 4.35943 0.638942 4.28418 0.869565 4.28418H19.1304C19.3611 4.28418 19.5822 4.35943 19.7453 4.49338C19.9084 4.62732 20 4.80899 20 4.99842C20 5.18785 19.9084 5.36952 19.7453 5.50346C19.5822 5.63741 19.3611 5.71266 19.1304 5.71266H0.869565C0.638942 5.71266 0.417765 5.63741 0.25469 5.50346C0.0916148 5.36952 0 5.18785 0 4.99842Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End Home Content -->
+
+  <!-- Begin Footer -->
+  <footer class="footer2">
+    <div class="container">
+      <div class="top">
+        <img src="assets/images/click-mark.png" alt="" class="footer2-logo" />
+        <div class="d-flex">
+          <a href="#" class="footer-link">Our Story</a>
+          <a href="https://oscar-update-click.netlify.app/clicked-coach" class="footer-link">Become a Clicked Coach</a>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="https://oscar-update-click.netlify.app/contact-us" class="footer-link">Contact Us</a>
+          <a href="https://oscar-update-click.netlify.app/terms" class="footer-link">Terms of Use</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Community Guidelines</a>
+        </div>
+      </div>
+      <div class="bottom d-flex">
+        <p class="footer-link">&copy; 2020 Clicked Inc. All rights Reserved.</p>
+        <div class="social-icons">
+          <a href="https://linkedin" class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.1875 0.1875H0.8125C0.466797 0.1875 0.1875 0.466797 0.1875 0.8125V15.1875C0.1875 15.5332 0.466797 15.8125 0.8125 15.8125H15.1875C15.5332 15.8125 15.8125 15.5332 15.8125 15.1875V0.8125C15.8125 0.466797 15.5332 0.1875 15.1875 0.1875ZM4.82227 13.502H2.50391V6.04492H4.82227V13.502ZM3.66406 5.02539C3.39829 5.02539 3.13849 4.94658 2.91751 4.79893C2.69654 4.65127 2.5243 4.44141 2.4226 4.19587C2.32089 3.95033 2.29428 3.68015 2.34613 3.41949C2.39798 3.15883 2.52596 2.91939 2.71389 2.73147C2.90181 2.54354 3.14125 2.41556 3.40191 2.36371C3.66257 2.31186 3.93275 2.33847 4.17829 2.44018C4.42383 2.54188 4.6337 2.71411 4.78135 2.93509C4.929 3.15607 5.00781 3.41587 5.00781 3.68164C5.00586 4.42383 4.4043 5.02539 3.66406 5.02539ZM13.502 13.502H11.1855V9.875C11.1855 9.00977 11.1699 7.89844 9.98047 7.89844C8.77539 7.89844 8.58984 8.83984 8.58984 9.8125V13.502H6.27539V6.04492H8.49805V7.06445H8.5293C8.83789 6.47852 9.59375 5.85938 10.7227 5.85938C13.0703 5.85938 13.502 7.4043 13.502 9.41211V13.502Z" fill="#7C788A"/>
+            </svg>
+          </a>
+          <a href="https://facebook" class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.1875 0.1875H0.8125C0.466797 0.1875 0.1875 0.466797 0.1875 0.8125V15.1875C0.1875 15.5332 0.466797 15.8125 0.8125 15.8125H15.1875C15.5332 15.8125 15.8125 15.5332 15.8125 15.1875V0.8125C15.8125 0.466797 15.5332 0.1875 15.1875 0.1875ZM13.3828 4.74805H12.1348C11.1562 4.74805 10.9668 5.21289 10.9668 5.89648V7.40234H13.3027L12.998 9.75977H10.9668V15.8125H8.53125V9.76172H6.49414V7.40234H8.53125V5.66406C8.53125 3.64648 9.76367 2.54688 11.5645 2.54688C12.4277 2.54688 13.168 2.61133 13.3848 2.64062V4.74805H13.3828Z" fill="#7C788A"/>
+            </svg>
+          </a>
+          <a href="https://instagram" class="social-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.00009 5.39609C6.5665 5.39609 5.39658 6.56601 5.39658 7.9996C5.39658 9.4332 6.5665 10.6031 8.00009 10.6031C9.43369 10.6031 10.6036 9.4332 10.6036 7.9996C10.6036 6.56601 9.43369 5.39609 8.00009 5.39609ZM15.8087 7.9996C15.8087 6.92148 15.8185 5.85312 15.7579 4.77695C15.6974 3.52695 15.4122 2.41757 14.4981 1.50351C13.5821 0.587495 12.4747 0.304292 11.2247 0.243745C10.1466 0.183198 9.07822 0.192964 8.00205 0.192964C6.92392 0.192964 5.85556 0.183198 4.77939 0.243745C3.52939 0.304292 2.42001 0.589448 1.50595 1.50351C0.589936 2.41953 0.306733 3.52695 0.246186 4.77695C0.18564 5.85507 0.195405 6.92343 0.195405 7.9996C0.195405 9.07578 0.18564 10.1461 0.246186 11.2223C0.306733 12.4723 0.59189 13.5816 1.50595 14.4957C2.42197 15.4117 3.52939 15.6949 4.77939 15.7555C5.85752 15.816 6.92587 15.8062 8.00205 15.8062C9.08017 15.8062 10.1485 15.816 11.2247 15.7555C12.4747 15.6949 13.5841 15.4098 14.4981 14.4957C15.4142 13.5797 15.6974 12.4723 15.7579 11.2223C15.8204 10.1461 15.8087 9.07773 15.8087 7.9996ZM8.00009 12.0055C5.7833 12.0055 3.99423 10.2164 3.99423 7.9996C3.99423 5.78281 5.7833 3.99374 8.00009 3.99374C10.2169 3.99374 12.006 5.78281 12.006 7.9996C12.006 10.2164 10.2169 12.0055 8.00009 12.0055ZM12.17 4.76523C11.6524 4.76523 11.2345 4.34726 11.2345 3.82968C11.2345 3.3121 11.6524 2.89414 12.17 2.89414C12.6876 2.89414 13.1056 3.3121 13.1056 3.82968C13.1057 3.95258 13.0816 4.07431 13.0347 4.18788C12.9877 4.30146 12.9188 4.40465 12.8319 4.49156C12.745 4.57846 12.6418 4.64737 12.5282 4.69433C12.4146 4.74129 12.2929 4.76538 12.17 4.76523Z" fill="#7C788A"/>
+            </svg>
+          </a>
+          <a href="https://twitter" class="social-icon">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.125 1.9668C16.5273 2.22462 15.877 2.41016 15.207 2.48243C15.9026 2.06922 16.4234 1.41641 16.6719 0.646492C16.0192 1.03475 15.3042 1.30701 14.5586 1.45118C14.247 1.11803 13.8701 0.852625 13.4514 0.671507C13.0327 0.490389 12.5812 0.397438 12.125 0.398446C10.2793 0.398446 8.79492 1.89454 8.79492 3.73048C8.79492 3.98829 8.82617 4.2461 8.87695 4.49415C6.11328 4.34962 3.64844 3.0293 2.00977 1.00782C1.71118 1.51781 1.55471 2.0985 1.55664 2.68946C1.55664 3.84571 2.14453 4.86524 3.04102 5.46485C2.5127 5.44405 1.99676 5.29883 1.53516 5.04102V5.08204C1.53516 6.70118 2.67969 8.04298 4.20508 8.35157C3.91867 8.42597 3.62404 8.46403 3.32812 8.46485C3.11133 8.46485 2.90625 8.44337 2.69922 8.41407C3.12109 9.73438 4.34961 10.6934 5.8125 10.7246C4.66797 11.6211 3.23438 12.1484 1.67773 12.1484C1.39844 12.1484 1.14062 12.1387 0.873047 12.1074C2.34961 13.0547 4.10156 13.6016 5.98828 13.6016C12.1133 13.6016 15.4648 8.52735 15.4648 4.12306C15.4648 3.97852 15.4648 3.83399 15.4551 3.68946C16.1035 3.21485 16.6719 2.62696 17.125 1.9668Z" fill="#7C788A"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!-- Begin Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <!-- End Scripts -->
+</body>
+
+</html>
