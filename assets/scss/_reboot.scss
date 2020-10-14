@@ -1,0 +1,107 @@
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  background-color: $bk-color;
+  color: $font-color2;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
+  cursor: default;
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba($black, 0.8);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $yellow;
+    outline: 1px solid $yellow;
+    border-radius: 2px;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+a,
+button,
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .3s ease-in-out ;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  @include mq('desktop-wide') {
+    max-width: 1200px;
+  }
+}
+
+hr {
+  border-color: rgba(white, 0.2);  
+}
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Avenir Next', sans-serif;
+}
+
+h1 {
+  @include heading1();
+}
+
+h2 {
+  @include heading2();
+}
+
+h3 {
+  @include heading3();
+}
+
+h4 {
+  @include heading4();
+}
+
+h5 {
+  @include heading5();
+}
+
+p {
+  @include bodyText('large');
+  &.size-normal {
+    @include bodyText('normal');
+  }
+  &.size-small {
+    @include bodyText('small'); 
+  }
+}
+
+// // Collapse
+// .collapse {
+//   &:not(.show) {
+//     display: block;
+//     opacity: 0;
+//     transition: opacity .3s ease-in-out;
+//   }
+//   &.show {
+//     opacity: 1;
+//   }
+// }

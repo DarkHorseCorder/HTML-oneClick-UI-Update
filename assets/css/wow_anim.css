@@ -1,0 +1,36 @@
+.wowBack {
+  background:#222;
+  position:relative; overflow:hidden;
+}
+.wowWrap div {
+  background:#27ae60; 
+  display:block;
+  width:100%;
+  margin:5% 0;
+  text-align:center;
+  padding-top:20%;
+  padding-bottom:20%;
+}
+
+.wowWrap {
+  width:16.66%;
+  float:left;
+  padding: 0 .5%;
+}
+
+.wowWrap h4{
+  position:fixed;
+  z-index:200;
+  width:100%;
+  padding:1% 0% 1% 0%;
+  margin:0;
+  color:white;  
+  font-size:1.35vw;
+  background:rgba(22,22,22,.3)
+}
+
+.wowWrap div:first-of-type{
+  margin-top:25%; }
+
+/*I've assigned class wHighlight to all the animate.css classes that add elements onto the page with delay.  */
+.wHighlight {background:#28a !important}

@@ -1,0 +1,146 @@
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+      $width: map_get($breakpoints, $width);
+      @if $type == max {
+          $width: $width - 1px;
+      }
+      @media only screen and (#{$type}-width: $width) {
+          @content;
+      }
+  }
+}
+
+@mixin heading1() {
+  font-size: 60px;
+  @include mq('tablet') {
+    font-size: 54px;
+  }
+  @include mq('tablet-wide') {
+    font-size: 60px;
+  }
+}
+@mixin heading2() {
+  font-size: 26px;
+  @include mq('tablet') {
+    font-size: 30px;
+  }
+  @include mq('tablet-wide') {
+    font-size: 34px;
+  }
+}
+@mixin heading3() {
+  font-size: 20px;
+  @include mq('tablet') {
+    font-size: 22px;
+  }
+  @include mq('tablet-wide') {
+    font-size: 24px;
+  }
+}
+@mixin heading4() {
+  font-size: 16px;
+  @include mq('tablet-wide') {
+    font-size: 18px;
+  }
+}
+@mixin heading5() {
+  font-size: 14px;
+  @include mq('tablet-wide') {
+    font-size: 16px;
+  }
+}
+@mixin bodyText($size) {
+  font-weight: 400;
+  @if $size == large {
+    font-size: 16px;
+    line-height: 2;
+    @include mq('tablet-wide') {
+      font-size: 18px;
+    }
+  }
+  @if $size == normal {
+    font-size: 14px;
+    line-height: 2;
+    opacity: 0.5;
+    @include mq('tablet-wide') {
+      font-size: 16px;
+    }
+  }
+  @if $size == small {
+    font-size: 12px;
+    line-height: 1.8;
+    opacity: 0.5;
+    @include mq('tablet-wide') {
+      font-size: 14px;
+    }
+  }
+}
+
+@mixin smallContainer {
+  max-width: 520px;
+  margin: auto;
+}
+
+// @mixin colorAnimation($color) {
+//   $bgColor: '$' + $color;
+//   animation: 1s #{'animation-' + $color} ease-in-out infinite alternate;
+//   @keyframes #{'animation-' + $color} {
+//     from {
+//       background-color: rgba(#{$bgColor}, 0.1);
+//     }
+//     to {
+//       background-color: rgba(#{$bgColor}, 0.3);
+//     }
+//   }
+// }
+
+@mixin menuEffect($color) {
+  a {
+    position: relative;
+    &:hover {
+      color: $color;
+      text-decoration: none;
+      svg path {
+        fill: $color;
+      }
+      &::before,&::after {
+        width: 50%;
+      }
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 1px;
+      background-color: $color;
+      transition: width .3s ease-in-out;
+    }
+  }
+}
+@mixin menuHover1() {
+  a {
+    &::before {
+      top: auto;
+      bottom: 0;
+      right: 50%;
+    }
+    &::after {
+      top: auto;
+      bottom: 0;
+      left: 50%;
+    }
+  }
+}
+@mixin menuHover2() {
+  a {
+    &::before {
+      top: 0;
+      right: 0;
+    }
+    &::after {
+      bottom: 0;
+      left: 0%;
+    }
+  }
+}
